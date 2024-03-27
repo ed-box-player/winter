@@ -1,8 +1,11 @@
+[viewBag]
 ==
+<?php
 function onStart()
 {
     $this['backendUrl'] = Backend::url('/');
 }
+?>
 ==
 <!-- Nav -->
 <nav id="layout-nav" class="navbar navbar-inverse navbar-fixed-top navbar-autohide" role="navigation">
@@ -23,6 +26,10 @@ function onStart()
                 <li class="{% if this.page.id == 'ajax' %}active{% endif %}"><a href="{{ 'ajax'|page }}">AJAX framework</a></li>
                 <li class="{% if this.page.id == 'plugins' %}active{% endif %}"><a href="{{ 'plugins'|page }}">Plugin components</a></li>
                 <li><a href="{{ backendUrl }}">Sign in to the Backend</a></li>
+                <li class="{% if this.page.id == 'user' %}active{% endif %}"><a href="{{ 'user/index'|page }}">User</a></li>
+                {% if user %}
+                    <li class=""><a href="javascript:;" data-request="onLogout" data-request-data="redirect: '/'">Logout</a></li>
+                {% endif %}
             </ul>
         </div>
     </div>

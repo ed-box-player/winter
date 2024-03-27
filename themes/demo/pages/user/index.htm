@@ -1,0 +1,19 @@
+title = "User Login / Register"
+url = "/user"
+layout = "default"
+is_hidden = 0
+meta_nofollow = 0
+
+[account]
+redirect = "user/index"
+paramCode = "code"
+forceSecure = 0
+requirePassword = 0
+==
+{% if user %}
+    <p>Hello {{ user.name }}</p>
+{% else %}
+    <div id="account-component">
+        {% component 'account' %}
+    </div>
+{% endif %}

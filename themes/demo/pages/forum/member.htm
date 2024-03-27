@@ -1,0 +1,15 @@
+title = "Forum Member"
+url = "/forum/member/:slug"
+layout = "default"
+is_hidden = 0
+meta_nofollow = 0
+
+[forumMember]
+slug = "{{ :slug }}"
+viewMode = "view"
+channelPage = "forum/channel"
+topicPage = "forum/topic"
+includeStyles = 1
+==
+<h1>{{ member.username }}</h1>
+{% component 'forumMember' %}
