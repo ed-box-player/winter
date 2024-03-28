@@ -77,7 +77,10 @@
         "winter/wn-userplus-plugin": "dev-main",
         "winter/wn-vapor-plugin": "dev-main",
         "winter/wn-workshop-theme": "dev-main",
-        "winter/laravel-config-writer": "^1.1"
+        "winter/laravel-config-writer": "^1.1",
+        "mikp/wn-openidconnect-plugin": "dev-master",
+        "flynsarmy/wn-sociallogin-plugin": "dev-master",
+        "mikp/wn-auth0login-plugin": "dev-master"
     },
     "require-dev": {
         "phpunit/phpunit": "^9.5.8",
@@ -123,5 +126,11 @@
             "composer/installers": true,
             "wikimedia/composer-merge-plugin": true
         }
-    }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/Flynsarmy/wn-sociallogin-plugin"
+        }
+    ]
 }
