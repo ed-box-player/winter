@@ -41,7 +41,6 @@
         "winter/wn-ckeditor-plugin": "dev-main",
         "winter/wn-cloudflare-plugin": "dev-main",
         "winter/wn-debugbar-plugin": "^4.0",
-        "winter/wn-docs-plugin": "dev-main",
         "winter/wn-driveraws-plugin": "dev-main",
         "winter/wn-drivergoogledrive-plugin": "dev-main",
         "winter/wn-drivermailgun-plugin": "dev-main",
